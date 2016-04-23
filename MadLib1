@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<!-- 
+var x = document.getElementById("x").value; 
+-->
+<!-- 	
+<h3>NAME</h3>
+	<input type="text" id="x"> 
+-->
+<!-- 
+document.getElementById("MadLib").innerHTML = x;
+ -->
+
+<body>
+
+	<!-- Inputs -->
+	<h1>MadLib1</h1>
+	<br>
+	<h3>Adjective:</h3>
+	<input type="text" id="1">
+	
+	<h3>Adjective:</h3>
+	<input type="text" id="2">
+	
+	<h3>Verb ending with "ing":</h3>
+	<input type="text" id="3">
+	
+	<h3>Color:</h3>
+	<input type="text" id="4"> 
+	
+	<h3>Adverb:</h3>
+	<input type="text" id="5"> 
+	
+	<h3>Verb ending with "ing":</h3>
+	<input type="text" id="6"> 
+	
+	<h3>Adjective:</h3>
+	<input type="text" id="7"> 
+	
+	<h3>Adjective:</h3>
+	<input type="text" id="8"> 
+	
+	<h3>Animal:</h3>
+	<input type="text" id="9"> 
+	
+	<h3>Verb ending with "ed":</h3>
+	<input type="text" id="10"> 
+	<!--  End of inputs -->
+	
+	<br>
+	
+	<!-- Button -->
+	<button onClick="main()">Submit!</button>
+	<!-- End of button -->
+	
+	<br>
+	
+	<!-- MadLib -->
+	<b id="MadLib"></b>
+	<!-- End MadLib -->
+	
+	<br>
+	
+	
+	
+	
+	<script>
+	
+		function main() {
+		
+		<!-- Set vars -->
+			var i = document.getElementById("1").value;
+			var ii = document.getElementById("2").value;
+			var iii = document.getElementById("3").value;
+			var iiii = document.getElementById("4").value;
+			var iiiii = document.getElementById("5").value;
+			var iiiiii = document.getElementById("6").value;
+			var iiiiiii = document.getElementById("7").value;
+			var iiiiiiii = document.getElementById("8").value;
+			var iiiiiiiii = document.getElementById("9").value;
+			var iiiiiiiiii = document.getElementById("10").value;
+			
+		<!-- End set vars -->
+			
+			<!-- The mad lib -->
+			document.getElementById("MadLib").innerHTML = "It was a " + i + " and " + ii + " day. I was " + iii + " my favorite " + iiii + " sweater. " + iiiii + " I got out of bed and started getting ready to go " + iiiiii + " when all of a sudden, a " + iiiiiii + ", " + iiiiiiii + ", " + iiiiiiiii + " " + iiiiiiiiii + " and then I woke up out of my dream!";
+			
+			<!-- End the mad lib -->
+		}
+	
+	</script>
+	
+	
+	
+	
+</body>
